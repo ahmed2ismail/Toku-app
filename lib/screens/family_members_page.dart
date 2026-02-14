@@ -8,8 +8,8 @@ class FamilyMembersPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Family Members"),
-        titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
+        title: const Text("Family Members"),
+        titleTextStyle: const TextStyle(color: Colors.white, fontSize: 20),
       ),
       body: ListView.builder(
         itemBuilder: (context, index) => familyMembersData[index],

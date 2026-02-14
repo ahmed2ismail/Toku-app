@@ -9,8 +9,8 @@ class ColorsPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 226, 112, 201),
       appBar: AppBar(
-        title: Text("Colors"),
-        titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
+        title: const Text("Colors"),
+        titleTextStyle: const TextStyle(color: Colors.white, fontSize: 20),
       ),
       body: ListView.builder(
         itemBuilder: (context, index) => colorsData[index],

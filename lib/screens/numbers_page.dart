@@ -8,8 +8,8 @@ class NumbersPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Numbers"),
-        titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
+        title: const Text("Numbers"),
+        titleTextStyle: const TextStyle(color: Colors.white, fontSize: 20),
       ),
       body: ListView.builder(
         itemBuilder: (context, index) => numbers[index],

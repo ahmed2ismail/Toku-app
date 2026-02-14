@@ -11,25 +11,25 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffFEF6DB),
+      backgroundColor: const Color(0xffFEF6DB),
       appBar: AppBar(
-        title: Text("Toku"),
-        titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
+        title: const Text("Toku"),
+        titleTextStyle: const TextStyle(color: Colors.white, fontSize: 20),
       ),
       body: Column(
         children: [
           category(
             categoryName: "Numbers",
-            color: Color(0xffEF9235),
+            color: const Color(0xffEF9235),
             onTap: () => Navigator.of(
               context,
-            ).push(MaterialPageRoute(builder: (context) => NumbersPage())),
+            ).push(MaterialPageRoute(builder: (context) => const NumbersPage())),
           ),
           category(
             categoryName: "Family Members",
             color: Colors.green,
             onTap: () => Navigator.of(context).push(
-              MaterialPageRoute(builder: (context) => FamilyMembersPage()),
+              MaterialPageRoute(builder: (context) => const FamilyMembersPage()),
             ),
           ),
           category(
@@ -37,16 +37,16 @@ class SplashScreen extends StatelessWidget {
             color: Colors.purple,
             onTap: () => Navigator.of(
               context,
-            ).push(MaterialPageRoute(builder: (context) => ColorsPage())),
+            ).push(MaterialPageRoute(builder: (context) => const ColorsPage())),
           ),
           category(
             categoryName: "Phrases",
             color: Colors.blueAccent,
             onTap: () => Navigator.of(
               context,
-            ).push(MaterialPageRoute(builder: (context) => PhrasesPage())),
+            ).push(MaterialPageRoute(builder: (context) => const PhrasesPage())),
           ),
-          Flexible(flex: 1, child: Container(color: Color(0xffFFF6DC))),
+          Flexible(flex: 1, child: Container(color: const Color(0xffFFF6DC))),
         ],
       ),
     );

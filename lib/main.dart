@@ -13,14 +13,14 @@ class TokuApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           backgroundColor: Color(0xff46322B),
           iconTheme: IconThemeData(color: Colors.white),
         ),
       ),
-      home: SplashScreen(),
+      home: const SplashScreen(),
       initialRoute: "/",
-      routes: {
+      routes: const {
         // "/":(context)
       },
     );

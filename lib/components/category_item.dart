@@ -12,10 +12,10 @@ GestureDetector category({
       width: double.infinity,
       color: color,
       alignment: Alignment.centerLeft,
-      padding: EdgeInsets.only(left: 16),
+      padding: const EdgeInsets.only(left: 16),
       child: Text(
         categoryName,
-        style: TextStyle(fontSize: 15, color: Colors.white),
+        style: const TextStyle(fontSize: 15, color: Colors.white),
       ),
     ),
   );

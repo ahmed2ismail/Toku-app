@@ -72,17 +72,17 @@ Card number({
 }) {
   return Card(
     margin: EdgeInsets.zero,
-    shape: BeveledRectangleBorder(),
+    shape: const BeveledRectangleBorder(),
     child: Row(
       children: [
         Container(
-          color: Color(0xffFFF6DC),
+          color: const Color(0xffFFF6DC),
           width: 80,
           child: Image.asset(image, fit: BoxFit.contain, width: 60, height: 60),
         ),
         Expanded(
           child: ListTile(
-            tileColor: Color(0xffEF9235),
+            tileColor: const Color(0xffEF9235),
             iconColor: Colors.white,
             textColor: Colors.white,
             title: Text(jpNum),
@@ -92,7 +92,7 @@ Card number({
                 final player = AudioPlayer();
                 await player.play(AssetSource(sound));
               },
-              icon: Icon(Icons.play_arrow),
+              icon: const Icon(Icons.play_arrow),
             ),
           ),
         ),

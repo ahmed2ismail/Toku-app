@@ -18,7 +18,7 @@ final List familyMembersData = [
     image: "assets/images/family_members/family_grandfather.png",
     jpNum: "Ojisan",
     enNum: "Grand Father",
-    sound: 'sounds/family_members/grand father.wav',
+    sound: 'sounds/family_members/grandfather.wav',
   ),
   familyMembersCard(
     image: "assets/images/family_members/family_mother.png",
@@ -30,19 +30,19 @@ final List familyMembersData = [
     image: "assets/images/family_members/family_grandmother.png",
     jpNum: "Sobo",
     enNum: "Grand mother",
-    sound: 'sounds/family_members/grand mother.wav',
+    sound: 'sounds/family_members/grandmother.wav',
   ),
   familyMembersCard(
     image: "assets/images/family_members/family_older_brother.png",
     jpNum: "Nisan",
     enNum: "older brother",
-    sound: 'sounds/family_members/older bother.wav',
+    sound: 'sounds/family_members/olderbrother.wav',
   ),
   familyMembersCard(
     image: "assets/images/family_members/family_older_sister.png",
     jpNum: "Ane",
     enNum: "older sister",
-    sound: 'sounds/family_members/older sister.wav',
+    sound: 'sounds/family_members/oldersister.wav',
   ),
   familyMembersCard(
     image: "assets/images/family_members/family_son.png",
@@ -54,13 +54,13 @@ final List familyMembersData = [
     image: "assets/images/family_members/family_younger_brother.png",
     jpNum: "Ototo",
     enNum: "younger brother",
-    sound: 'sounds/family_members/younger brohter.wav',
+    sound: 'sounds/family_members/youngerbrother.wav',
   ),
   familyMembersCard(
     image: "assets/images/family_members/family_younger_sister.png",
     jpNum: "imouto",
     enNum: "younger sister",
-    sound: 'sounds/family_members/younger sister.wav',
+    sound: 'sounds/family_members/youngersister.wav',
   ),
 ];
 
@@ -72,11 +72,11 @@ Card familyMembersCard({
 }) {
   return Card(
     margin: EdgeInsets.zero,
-    shape: BeveledRectangleBorder(),
+    shape: const BeveledRectangleBorder(),
     child: Row(
       children: [
         Container(
-          color: Color(0xffFFF6DC),
+          color: const Color(0xffFFF6DC),
           width: 80,
           child: Image.asset(image, fit: BoxFit.contain, width: 60, height: 60),
         ),
@@ -92,7 +92,7 @@ Card familyMembersCard({
                 final player = AudioPlayer();
                 await player.play(AssetSource(sound));
               },
-              icon: Icon(Icons.play_arrow),
+              icon: const Icon(Icons.play_arrow),
             ),
           ),
         ),

@@ -56,21 +56,21 @@ Card phrasesCard({
 }) {
   return Card(
     margin: EdgeInsets.zero,
-    shape: BeveledRectangleBorder(),
+    shape: const BeveledRectangleBorder(),
     child: ListTile(
       minTileHeight: 100,
       tileColor: Colors.blueAccent,
       iconColor: Colors.white,
       textColor: Colors.white,
       title: Text(jpNum),
-      titleTextStyle: TextStyle(fontSize: 15),
+      titleTextStyle: const TextStyle(fontSize: 15),
       subtitle: Text(enNum),
       trailing: IconButton(
         onPressed: () async {
           final player = AudioPlayer();
           await player.play(AssetSource(sound));
         },
-        icon: Icon(Icons.play_arrow),
+        icon: const Icon(Icons.play_arrow),
       ),
     ),
   );
